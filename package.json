@@ -1,0 +1,44 @@
+{
+  "name": "@scope/package",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/package.js",
+  "module": "dist/package.js",
+  "exports": {
+    ".": {
+      "import": "./dist/package.js",
+      "types": "./dist/package.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "vite build && yarn api-extractor run --local",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.3",
+    "@microsoft/api-extractor": "^7.10.4",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
+    "@types/node": "^22.7.3",
+    "@types/react": "^18.2.15",
+    "@vitejs/plugin-react": "^4.0.3",
+    "storybook": "^8.4.7",
+    "typescript": "5.4.5",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^4.3.0",
+    "vite-plugin-inject-css": "^1.0.2",
+    "vite-plugin-lib-inject-css": "^2.1.1"
+  }
+}
