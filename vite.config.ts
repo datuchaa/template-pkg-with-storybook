@@ -4,7 +4,13 @@ import dts from "vite-plugin-dts";
 import { libInjectCss } from "vite-plugin-lib-inject-css";
 
 export default defineConfig({
-  plugins: [react(), libInjectCss(), dts()],
+  plugins: [
+    react(),
+    libInjectCss(),
+    dts({
+      rollupTypes: true,
+    }),
+  ],
   build: {
     lib: {
       entry: "src/index.ts",
