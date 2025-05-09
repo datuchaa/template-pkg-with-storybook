@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@stitches/react':
-    specifier: ^1.2.8
-    version: 1.2.8(react@18.3.1)
   react:
     specifier: ^18.2.0
     version: 18.3.1
@@ -963,14 +960,6 @@ packages:
     transitivePeerDependencies:
       - '@types/node'
     dev: true
-
-  /@stitches/react@1.2.8(react@18.3.1):
-    resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
-    peerDependencies:
-      react: '>= 16.3.0'
-    dependencies:
-      react: 18.3.1
-    dev: false
 
   /@storybook/addon-actions@8.4.7(storybook@8.4.7):
     resolution: {integrity: sha512-mjtD5JxcPuW74T6h7nqMxWTvDneFtokg88p6kQ5OnC1M259iAXb//yiSZgu/quunMHPCXSiqn4FNOSgASTSbsA==}
