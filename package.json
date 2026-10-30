@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "vite build",
+    "echonode": "echo 'node $(node -v)'",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -38,5 +39,9 @@
     "vite-plugin-dts": "^4.3.0",
     "vite-plugin-inject-css": "^1.0.2",
     "vite-plugin-lib-inject-css": "^2.1.1"
+  },
+  "packageManager": "pnpm@10.21.0",
+  "engines": {
+    "node": ">=24"
   }
 }
